@@ -1,0 +1,25 @@
+# Public-release allowlist: keep local data, outputs, weights, documents,
+# caches, IDE settings, and machine-specific scripts out of Git.
+*
+
+# Repository metadata and dependency manifest
+!/.gitignore
+!/requirements.txt
+
+# Core SiamSNN source
+!/final_test.py
+!/pairwise.py
+!/siamfc.py
+
+# Reusable utilities without machine-specific configuration
+!/compare_weights.py
+!/process_data.py
+!/Transmitter.py
+
+# ANN-to-SNN implementation
+!/spiking_utils/
+!/spiking_utils/ann_parser.py
+!/spiking_utils/snn_transformer.py
+!/spiking_utils/spike_dag.py
+!/spiking_utils/spike_layer.py
+!/spiking_utils/spike_tensor.py
